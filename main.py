@@ -68,6 +68,7 @@ frame.pack()
 #positioning where the labels will be in the 150x150 grid
 label1 = tk.Label(master=frame, text="I'm at (0, 0)", bg="red")
 
+#position is top left
 label1.place(x=0, y=0)
 
 
