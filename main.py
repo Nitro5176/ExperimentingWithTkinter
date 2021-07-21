@@ -96,4 +96,50 @@ for row in range(3):
 
 thirdWindow.mainloop()
 
+#showing where n, e ,s ,w areas for the labels
+fourthWindow = tk.Tk()
+fourthWindow.columnconfigure(0, minsize=250)
+fourthWindow.rowconfigure([0, 1], minsize=100)
+#without any directions, it would default to middle
+label1 = tk.Label(text="A")
+label1.grid(row=0, column=0)
+
+label2 = tk.Label(text="B")
+label2.grid(row=1, column=0)
+
+fourthWindow.mainloop()
+
+#when you add a direction for the labels
+
+fifthWindow = tk.Tk()
+fifthWindow.columnconfigure(0, minsize=250)
+fifthWindow.rowconfigure([0, 1], minsize=100)
+
+#now adding directions in the labels
+label1 = tk.Label(text="A")
+label1.grid(row=0, column=0, sticky="n")
+
+label2 = tk.Label(text="B")
+label2.grid(row=1, column=0, sticky="n")
+
+fifthWindow.mainloop()
+
+#showing the dimensions of the labels in the grid with directions
+window = tk.Tk()
+
+window.rowconfigure(0, minsize=50)
+window.columnconfigure([0, 1, 2, 3], minsize=50)
+
+label1 = tk.Label(text="1", bg="black", fg="white")
+label2 = tk.Label(text="2", bg="black", fg="white")
+label3 = tk.Label(text="3", bg="black", fg="white")
+label4 = tk.Label(text="4", bg="black", fg="white")
+
+#shows how much of the space its taken with the directions
+label1.grid(row=0, column=0)
+label2.grid(row=0, column=1, sticky="ew")
+label3.grid(row=0, column=2, sticky="ns")
+label4.grid(row=0, column=3, sticky="nsew")
+
+window.mainloop()
 
