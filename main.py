@@ -78,3 +78,22 @@ label2.place(x=75, y=75)
 
 
 secondWindow.mainloop()
+
+thirdWindow = tk.Tk()
+
+#goes to each row and adds the columns
+for row in range(3):
+    for column in range(3):
+        frame = tk.Frame(
+            master=thirdWindow,
+            relief=tk.RAISED,
+            borderwidth=1
+        )
+        #padx and pady makes space in the frames
+        frame.grid(row=row, column=column, padx=5, pady=5)
+        label = tk.Button(master=frame, text=f"Row {row}\nColumn {column}")
+        label.pack(padx=10, pady=10)
+
+thirdWindow.mainloop()
+
+
