@@ -14,6 +14,12 @@ label = tk.Entry(master=frame)
 
 clearButton = tk.Button(master=frame, text="Clear")
 numbersOnPad = 0
+
+#Step1 Get a grid of  6x4
+#Step2 Get each of the buttons a label with the corresponding buttons
+#Step 3 add events for each of the buttons
+#Step 4 Add adjustments to the grid/buttons to make it look nice
+#Step 5 Testing.
 # container.columnconfigure(index, weight)
 # container.rowconfigure(index, weight)
 
