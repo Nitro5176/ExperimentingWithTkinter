@@ -12,8 +12,6 @@ frame.pack()
 label = tk.Entry(master=frame)
 
 
-clearButton = tk.Button(master=frame, text="Clear")
-numbersOnPad = 0
 
 #Step1 Get a grid of  6x4
 #Step2 Get each of the buttons a label with the corresponding buttons
@@ -23,8 +21,32 @@ numbersOnPad = 0
 # container.columnconfigure(index, weight)
 # container.rowconfigure(index, weight)
 
-frame.columnconfigure(0, 1)
-frame.rowconfigure(1, 2)
+# frame.columnconfigure(0, 1)
+# frame.rowconfigure(1, 2)
+
+inputText = tk.Button(master=frame, text="")
+clearButton = tk.Button(master=frame, text="Clear")
+percentageButton = tk.Button(master=frame)
+powerOfButton = tk.Button(master=frame)
+divisionButton = tk.Button(master=frame)
+multiplicationButton = tk.Button(master=frame)
+additionButton = tk.Button(master=frame)
+subtractionButton = tk.Button(master=frame)
+decimalButton = tk.Button(master=frame)
+
+num0 = tk.Button(master=frame, text="0")
+num1 = tk.Button(master=frame, text="1")
+num2 = tk.Button(master=frame, text="2")
+num3 = tk.Button(master=frame, text="3")
+num4 = tk.Button(master=frame, text="4")
+num5 = tk.Button(master=frame, text="5")
+num6 = tk.Button(master=frame, text="6")
+num7 = tk.Button(master=frame, text="7")
+num8 = tk.Button(master=frame, text="8")
+num9 = tk.Button(master=frame, text="9")
+
+numbersOnPad = 0
+
 
 
 # for i in range(3):
